@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 38px;
+}
+
+h3 {
+    color: teal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+input {
+    width: 30px;
+}
+
+p {
+    margin-top: 14px;
+}
