@@ -16,7 +16,8 @@ WORKDIR /usr/local/tomcat
 RUN rm -rf webapps/*
 
 
-COPY --from=build /app/target/Cart.war webapps/Cart.war
+# Đổi tên thành ROOT.war để chạy trực tiếp ở đường dẫn gốc http://localhost:8080/
+COPY --from=build /app/target/Cart.war webapps/ROOT.war
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
